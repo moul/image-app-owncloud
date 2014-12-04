@@ -10,14 +10,14 @@ This image is built using [Image Tools](https://github.com/online-labs/image-too
 Commands
 --------
 
-# build the image in a rootfs directory
-$ make rootfs
+    # build the image in a rootfs directory
+    $ make rootfs
 
-# push the image on s3
-$ make publish_on_s3.tar
+    # push the image on s3
+    $ make publish_on_s3.tar
 
-# write the image to /dev/nbd1
-$ make install_on_disk
+    # write the image to /dev/nbd1
+    $ make install_on_disk
 
 Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
 
