@@ -9,6 +9,7 @@ RUN apt-get -q update && \
     apt-get -q upgrade && \
     apt-get install -y -q \
 	mysql-server \
+	php5-curl \
 	pwgen \
     && apt-get install --no-install-recommends -y -q \
         owncloud \
