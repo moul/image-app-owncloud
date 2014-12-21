@@ -1,5 +1,7 @@
 ## -*- docker-image-name: "armbuild/ocs-app-owncloud:trusty" -*-
 FROM armbuild/ocs-distrib-ubuntu:trusty
+MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
