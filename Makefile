@@ -1,10 +1,9 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			ocs-app-owncloud
-VERSION =		trusty
-VERSION_ALIASES =	14.04 latest
-IS_LATEST =		1
+VERSION =		latest
+VERSION_ALIASES =	14.04 latest trusty 6.0.1 6.0 6
 TITLE =			Owncloud
-DESCRIPTION =		Owncloud 6.0
+DESCRIPTION =		Owncloud 6.0.1
 DOC_URL =		https://doc.cloud.online.net/applications/owncloud.html
 SOURCE_URL =		https://github.com/online-labs/image-app-owncloud
 
