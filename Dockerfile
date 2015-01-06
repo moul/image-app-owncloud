@@ -7,7 +7,10 @@ MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
 RUN /usr/local/sbin/builder-enter
 
 # Install packages
-RUN apt-get -q update && \
+RUN 
+    sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.04/ /' >> /etc/apt/sources.list.d/owncloud.list" && \
+    curl -Ls http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.04/Release.key | apt-key add - && \
+    apt-get -q update && \
     apt-get -y -q upgrade && \
     apt-get install -y -q \
     php5-curl \
