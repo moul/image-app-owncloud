@@ -2,20 +2,23 @@
 
 cat <<EOF
 
-Owncloud $(cat /usr/share/owncloud/version.php | grep VersionString | cut -d\' -f2) is installed in /usr/share/owncloud.
+Owncloud $(cat /var/www/owncloud/version.php | grep VersionString | cut -d\' -f2) is installed in /var/www/owncloud.
 EOF
 
 if [ -f /root/.my.cnf ]; then
     cat <<EOF
+
 MySQL is configured for user root with password $(cat /root/.my.cnf | grep password | awk '{print $3}').
 To continue the installation, open http://$(/usr/local/bin/oc-metadata PUBLIC_IP_ADDRESS)/owncloud/ in your browser.
 EOF
 else
     cat <<EOF
+
 MySQL is installing in background, come back in a few seconds.
 EOF
 fi
 
 cat <<EOF
+
 You can hide this message on the next connection by deleting the $0 file.
 EOF
