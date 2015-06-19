@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			scw-app-owncloud
 VERSION =		latest
-VERSION_ALIASES =	14.04 latest trusty 7.0.4 7.0 7
+VERSION_ALIASES =	8.0.4 8.0 8
 TITLE =			ownCloud
 DESCRIPTION =		ownCloud
 DOC_URL =		https://www.scaleway.com/docs/deploy-owncloud-with-object-storage
